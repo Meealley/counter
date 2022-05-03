@@ -1,0 +1,142 @@
+/*{----body---*/
+    *,
+    ::after,
+    ::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Raleway', sans-serif;
+        background-color: #cceda4;
+        color: #333;
+        line-height: 1.5;
+        font-size: 15px;
+    }
+    ul {
+        list-style-type: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    h1, h2, h3, h4 {
+        letter-spacing: 3px;
+        text-transform: capitalize;
+        line-height: 1.23;
+        margin-bottom: 12px;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.25rem;
+    }
+    h4 {
+       font-size: 14px;
+    }
+    p {
+        margin-bottom: 1.25rem;
+        color: #333;
+    }
+    @media screen and (min-width: 800px) {
+        h1 {
+            font-size: 4rem;
+        }
+        h2 {
+            font-size: 2.5rem;
+        }
+        h3 {
+            font-size: 1.75rem;
+        }
+        h4 {
+            font: 1rem;
+        }
+        body {
+            font-size: 1rem;
+        }
+        h1, h2, h3, h4 {
+            line-height: 1;
+        }
+    }
+    main {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+    
+    /*---nav---*/
+    nav {
+        background: whitesmoke;
+        height: 3rem;
+        display: grid;
+        align-items: center;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);  
+    }
+    .nav-center {
+        width: 90vw;
+        max-width: fit-content;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav-center h4 {
+        margin-bottom: 0;
+        color: aqua;
+    }
+    .nav-links {
+        display: flex;
+    
+    }
+    nav a {
+        text-transform: capitalize;
+        font-weight: 700;
+        font-size: 1rem;
+        color: blueviolet;
+        letter-spacing: 2px;
+        margin-right: 1rem;
+    }
+    nav a:hover {
+        color: #d3fc03;
+    }
+    
+    /*-- container---*/
+    #value {
+        font-size: 6rem;
+        font-weight: bold;
+    }
+    .container {
+        text-align: center;
+    }
+    .container h2 {
+        background: #434352;
+        color: #fff;
+        padding: 1rem;
+        border-radius: 6px;
+        margin-bottom: 2.5rem;
+    }
+    .btn {
+        font-family: 'Raleway', sans-serif;
+        text-transform: uppercase;
+        background: transparent;
+        display: inline-block;
+        font-weight: 700;
+        cursor: pointer;
+        letter-spacing: 1px;
+        font-size: 1rem;
+        border: 2px solid #332;
+        padding: 0.65rem 0.35rem;
+        border-radius: 4px;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+        transition: width 2s, height 2s transform 2s;
+    }
+    .btn:hover {
+        background: #333;
+        color: #fff;
+        width: 100px;
+        height: 40px;
+    }
+    
